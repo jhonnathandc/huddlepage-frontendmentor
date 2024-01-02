@@ -1,0 +1,53 @@
+.conversation {
+  max-width: 124.8rem;
+  margin: 0 auto;
+  margin-bottom: 26.7rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include responsive(s) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  @include responsive(xs) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .image {
+    max-width: 56rem;
+  }
+
+  .content {
+    max-width: 52rem;
+
+    h2 {
+      margin-bottom: 2.6rem;
+
+      @include responsive(s) {
+        text-align: center;
+        margin-bottom: 1.6rem;
+      }
+
+      @include responsive(xs) {
+        text-align: center;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    p {
+      @include responsive(s) {
+        text-align: center;
+      }
+
+      @include responsive(xs) {
+        text-align: center;
+      }
+    }
+  }
+}

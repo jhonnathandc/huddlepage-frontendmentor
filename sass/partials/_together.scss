@@ -1,0 +1,122 @@
+.together-bg {
+  background-color: $bg;
+  margin-bottom: 33.384rem;
+  position: relative;
+
+  @include responsive(s) {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    margin-bottom: 25rem;
+  }
+
+  @include responsive(xs) {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16.5rem;
+    background: url("../../images/bg-section-top-desktop-1.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -16.5rem;
+
+    @include responsive(xs) {
+      background: url("../../images/bg-section-top-mobile-1.svg") no-repeat;
+      background-size: cover;
+      height: 11.2rem;
+      top: -11.2rem;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 13.9rem;
+    background: url("../../images/bg-section-bottom-desktop-1.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -13.9rem;
+
+    @include responsive(xs) {
+      background: url("../../images/bg-section-bottom-mobile-1.svg") no-repeat;
+      background-size: cover;
+      height: 5.2rem;
+      bottom: -5.2rem;
+    }
+  }
+
+  .together {
+    max-width: 122.8rem;
+    margin: 0 auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(s) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    @include responsive(xs) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .content {
+      max-width: 52rem;
+
+      @include responsive(s) {
+        order: 2;
+      }
+
+      @include responsive(xs) {
+        order: 2;
+      }
+
+      h2 {
+        margin-bottom: 2.6rem;
+
+        @include responsive(s) {
+          margin-bottom: 1.6rem;
+          text-align: center;
+        }
+
+        @include responsive(xs) {
+          margin-bottom: 1.6rem;
+          text-align: center;
+        }
+      }
+
+      p {
+        @include responsive(s) {
+          text-align: center;
+        }
+
+        @include responsive(xs) {
+          text-align: center;
+        }
+      }
+    }
+
+    .image {
+      max-width: 54rem;
+      width: 100%;
+
+      @include responsive(s) {
+        order: 1;
+      }
+
+      @include responsive(xs) {
+        order: 1;
+      }
+    }
+  }
+}

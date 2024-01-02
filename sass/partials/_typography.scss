@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+@mixin type-1($size, $device) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+
+  // H1
+  @if ($size == h1) and ($device == desktop) {
+    font-size: 9.6rem;
+    line-height: 14.4rem;
+  } @else if ($size == h1) and ($device == mobile) {
+    font-size: 6.095rem;
+    line-height: 9.14rem;
+  }
+
+  // H2
+  @else if ($size == h2) and ($device == desktop) {
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+  } @else if ($size == h2) and ($device == mobile) {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  // H3
+  @else if ($size == h3) and ($device == desktop) {
+    font-size: 4rem;
+    line-height: 6rem;
+  } @else if ($size == h3) and ($device == mobile) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@mixin type-2($size, $device) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+
+  // B1
+  @if ($size == b1) and ($device == desktop) {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  } @else if ($size == b1) and ($device == mobile) {
+    font-size: 1.524rem;
+    line-height: 2.29rem;
+  }
+
+  // B2
+  @else if ($size == b2) and ($device == desktop) {
+    font-size: 2rem;
+    line-height: 3rem;
+  } @else if ($size == b2) and ($device == mobile) {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  // B3
+  @else if ($size == b3) and ($device == desktop) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  } @else if ($size == b3) and ($device == mobile) {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  // B4
+  @else if ($size == b4) and ($device == desktop) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  } @else if ($size == b4) and ($device == mobile) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+.h1 {
+  @include type-1(h1, desktop);
+  @include responsive(s) {
+    @include type-1(h1, mobile);
+  }
+  @include responsive(xs) {
+    @include type-1(h1, mobile);
+  }
+}
+
+.h2 {
+  @include type-1(h2, desktop);
+  @include responsive(s) {
+    @include type-1(h2, mobile);
+  }
+  @include responsive(xs) {
+    @include type-1(h2, mobile);
+  }
+}
+
+.h3 {
+  @include type-1(h3, desktop);
+  @include responsive(s) {
+    @include type-1(h3, mobile);
+  }
+  @include responsive(xs) {
+    @include type-1(h3, mobile);
+  }
+}
+
+.b1 {
+  @include type-2(b1, desktop);
+  @include responsive(s) {
+    @include type-2(b1, mobile);
+  }
+  @include responsive(xs) {
+    @include type-2(b1, mobile);
+  }
+}
+
+.b2 {
+  @include type-2(b2, desktop);
+  @include responsive(s) {
+    @include type-2(b2, mobile);
+  }
+  @include responsive(xs) {
+    @include type-2(b2, mobile);
+  }
+}
+
+.b3 {
+  @include type-2(b3, desktop);
+  @include responsive(s) {
+    @include type-2(b3, mobile);
+  }
+  @include responsive(xs) {
+    @include type-2(b3, mobile);
+  }
+}
+
+.b4 {
+  @include type-2(b4, desktop);
+  @include responsive(s) {
+    @include type-2(b4, mobile);
+  }
+  @include responsive(xs) {
+    @include type-2(b4, mobile);
+  }
+}

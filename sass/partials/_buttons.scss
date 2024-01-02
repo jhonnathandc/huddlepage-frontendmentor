@@ -1,0 +1,98 @@
+.btn-primary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: $white;
+  background-color: $primary;
+  padding: 2.5rem 9.9rem 2.5rem 10rem;
+  border-radius: 4rem;
+  box-shadow: 0 0.6rem 1.3rem rgba(0, 37, 46, 0.22);
+  transition: 0.3s ease;
+
+  @include responsive(s) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1.1rem 3.9rem 1.1rem 4rem;
+  }
+
+  @include responsive(xs) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1.1rem 3.9rem 1.1rem 4rem;
+  }
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.btn-secondary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $primary;
+  border: 0.1rem solid $primary;
+  border-radius: 2rem;
+  padding: 0.9rem 3rem 0.9rem 3.1rem;
+  box-shadow: 0 0 0.9rem 0 rgba(255, 82, 193, 0.22);
+  transition: 0.3s ease;
+
+  @include responsive(s) {
+    font-size: 0.941rem;
+    padding: 0.529rem 1.776rem 0.524rem 1.824rem;
+  }
+
+  @include responsive(xs) {
+    font-size: 0.941rem;
+    padding: 0.529rem 1.776rem 0.524rem 1.824rem;
+  }
+
+  &:hover {
+    color: $primary-hover;
+    border-color: $primary-hover;
+  }
+}
+
+.btn-form {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: $white;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: $primary;
+  padding: 1.2rem 4.1rem 1.2rem 4.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.btn-social {
+  svg {
+    @include responsive(s) {
+      width: 2.4rem;
+    }
+
+    @include responsive(xs) {
+      width: 2.4rem;
+    }
+
+    path {
+      fill: $white;
+      transition: 0.3s ease;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $cyan;
+      }
+    }
+  }
+}
