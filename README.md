@@ -1,15 +1,15 @@
-# 3-column Preview Card Component - FrontEnd Mentor
+# Huddle landing page with curved sections - FrontEnd Mentor
 
 This project is part of the challenges of [FrontEnd Mentor](https://www.frontendmentor.io/).
 
-[Access the deploy here.](https://nftpreview-frontendmentor.vercel.app/)
+[Access the deploy here.](https://huddlepage-frontendmentor.vercel.app/)
 <br>
 <br>
-[Access the challenge on the FrontEnd Mentor here.](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+[Access the challenge on the FrontEnd Mentor here.](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2)
 
 ## Demonstration
+![Desktop + Mobile - 6](https://github.com/jhonnathandc/huddlepage-frontendmentor/assets/82620787/c178e178-ddf0-46b3-9f0f-202162fe6223)
 
-![Wireframe - 1](https://user-images.githubusercontent.com/82620787/235288053-9179feed-ce48-4712-96ce-f4a5fb2d3bfb.png)
 
 ## More Informations
 
@@ -17,10 +17,11 @@ It was built as proposed in the design, using:
 
 - HTML
 - CSS
+- JavsScript
 
 ## Stack
 
-**Front-end:** HTML, CSS
+**Front-end:** HTML, CSS, JavaScript
 
 ## License
 
